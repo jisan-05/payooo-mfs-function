@@ -14,6 +14,13 @@ document
         const addMoney = getInputFieldValueById("input-add-money");
         const pinNumber = getInputFieldValueById("input-pin-number");
 
+        //number validation
+        if(isNaN(addMoney)){
+            alert("Enter Number ??????")
+            return;
+        }
+
+
         //wrong way to verify . do not try it at your serious website
         if (pinNumber === 1234) {
             const balance = getTextFieldValueById("account-balance");
@@ -22,6 +29,9 @@ document
 
             // add to transction history
             const p = document.createElement("p");
+            p.classList.add('bg-blue-300')
+            p.classList.add('p-3')
+            p.classList.add('text-center')
             p.innerText = `Added ${addMoney} Tk. New Balancec ${newBalance}`;
 
             //should be a common function
