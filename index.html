@@ -19,7 +19,7 @@
                     <div class="stats shadow">
                         <div class="stat">
                             <div class="stat-title">Account Balance</div>
-                            <div class="stat-value">9400</div>
+                            <div class="stat-value" id="account-balance">9400</div>
                         </div>
                     </div>
                     <div class="divider"></div>
@@ -30,7 +30,31 @@
                     </div>
                     <!-- Feature End -->
                     <div class="divider"></div>
-                    <!-- Form  -->
+                    <!-- Add money form start  -->
+                    <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Add Money</span>
+                                </label>
+                                <input type="text" id="input-add-money" placeholder="Enter Add money"
+                                    class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Pin Number</span>
+                                </label>
+                                <input type="password" id="input-pin-number" placeholder="Enter Pin"
+                                    class="input input-bordered" required />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button class="btn btn-primary" id="btn-add-money">Add Money</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Add money form end  -->
+
+                    <!-- Cash Out Form Start  -->
                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <div class="form-control">
@@ -52,6 +76,8 @@
                             </div>
                         </form>
                     </div>
+                    <!-- Cash Out Form End  -->
+                    
                 </div>
 
             </div>
