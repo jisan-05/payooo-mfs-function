@@ -19,6 +19,14 @@ document
             const balance = getTextFieldValueById("account-balance");
             const newBalance = balance + addMoney;
             document.getElementById("account-balance").innerText = newBalance;
+
+            // add to transction history
+            const p = document.createElement("p");
+            p.innerText = `Added ${addMoney} Tk. New Balancec ${newBalance}`;
+
+            //should be a common function
+            document.getElementById('transaction-section').appendChild(p)
+
         } else {
             alert("Failed to add money");
         }
